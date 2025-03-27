@@ -10,6 +10,11 @@
     src: url("fonts/rubik.ttf") format("truetype");
 }
 /* Global Transition Effect */
+#content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 body {
     transition: background-color 0.3s, color 0.3s, filter 0.3s;
 }
@@ -25,6 +30,9 @@ body {
 body {
     background: var(--bg);
     color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Light Mode Styles */
@@ -96,6 +104,7 @@ header ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 1.2em;
+    transition: background-color 0.3s, color 0.3s, filter 0.3s;
 }
 header ul li a:hover{
     color: var(--red);
@@ -232,4 +241,13 @@ header ul li a:hover{
 .light{
     color: var(--fg);
     background-color: white;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fg);
+    bottom: 0;
 }
