@@ -10,4 +10,4 @@ Font DB is an example database that stores fonts and provides a link to download
 
 ## Demo
 
-Insert gif or link to demo
+[Demo](https://commondrop.github.io/FontDB/)
