@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Rubik",
+        "example": "a b c d e f g h i",
+        "download": "https://fonts.google.com/specimen/Rubik?query=rubik"
+    },
+    {
+        "id": 2,
+        "name": "Roboto",
+        "example": "a b c d e f g h i",
+        "download": "https://fonts.google.com/specimen/Roboto"
+    },
+    {
+        "id": 3,
+        "name": "Winky Sans",
+        "example": "a b c d e f g h i",
+        "download": "https://fonts.google.com/specimen/Winky+Sans"
+    },
+    {
+        "id": 4,
+        "name": "Boldonse",
+        "example": "a b c d e f g h i",
+        "download": "https://fonts.google.com/specimen/Boldonse"
+    },
+    {
+        "id": 5,
+        "name": "Poppins",
+        "example": "a b c d e f g h i",
+        "download": "https://fonts.google.com/specimen/Poppins"
+    },
+    {
+        "id": 6,
+        "name": "Outfit",
+        "example": "a b c d e f g h i",
+        "download": "https://fonts.google.com/specimen/Outfit"
+    },
+    {
+        "id": 7,
+        "name": "Bytesized",
+        "example": "a b c d e f g h i",
+        "download": "https://fonts.google.com/specimen/Bytesized"
+    }
+]

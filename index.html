@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font DB</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body id="light">
+    <header>
+        <h2>FONT <span class="red">DB</span></h2>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Github</a></li>
+            <li><a href="">Contact</a></li>
+            <svg class="bgtoggle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-moon">
+                <path d="M12 8a2.83 2.83 0 0 0 4 4 4 4 0 1 1-4-4"/>
+                <path d="M12 2v2"/>
+                <path d="M12 20v2"/>
+                <path d="m4.9 4.9 1.4 1.4"/>
+                <path d="m17.7 17.7 1.4 1.4"/>
+                <path d="M2 12h2"/>
+                <path d="M20 12h2"/>
+                <path d="m6.3 17.7-1.4 1.4"/>
+                <path d="m19.1 4.9-1.4 1.4"/>
+              </svg>
+              
+        </ul>
+    </header>
+    <section class="hero">
+        <h2>THE FONT<br><span class="red">DATABASE</span><br>YOU NEED</h2>
+    </section>
+    <div class="search-wrapper">
+        <input type="search" id="search" data-search placeholder="Search...">
+    </div>
+    <div class="font-cards" data-font-cards-container>
+        <template data-font-template>
+            <div class="card" id="light">
+                <div class="name" data-name></div>
+                <div class="example" data-example></div>
+                <a href="#" target="_blank" data-download><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download-icon lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg></a>
+            </div>
+        </template>
+        <div id="font-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 data-modal-name></h2>
+                <p><span data-modal-example></span></p>
+                <a href="#" target="_blank" data-download ><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download-icon lucide-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg></a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Bytesized&family=Gidole&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+@font-face {
+    font-family: "Rubik";
+    src: url("fonts/rubik.ttf") format("truetype");
+}
+/* Global Transition Effect */
+body {
+    transition: background-color 0.3s, color 0.3s, filter 0.3s;
+}
+
+/* Dark Mode (default) */
+:root {
+    --bg: #1B1B1F;
+    --fg: #151517;
+    --red: #F56565;
+    --hover: #414853;
+}
+
+body {
+    background: var(--bg);
+    color: #fff;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background: #fff;
+    color: #333;
+}
+
+body.light-mode .card {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body.light-mode .card:hover {
+    background-color: #ddd;
+}
+
+body.light-mode .modal-content {
+    background: #fff;
+    color: #333;
+}
+
+body.light-mode .close {
+    color: #333;
+}
+
+body.light-mode .bgtoggle path {
+    fill: #333;
+    stroke: #333;
+}
+.svg.light{
+    color:#151517;
+}
+
+/* Hover state for cards */
+.card:hover {
+    background-color: var(--hover);
+}
+
+header{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+header h2{
+    font-size: 2.5em;
+    cursor: pointer;
+}
+.red{
+    color: var(--red);
+}
+header ul{
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+header ul svg:hover{
+    color: var(--red);
+    cursor: pointer;
+}
+header ul li{
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+}
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+header ul li a:hover{
+    color: var(--red);
+}
+.hero{
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    padding-left: 10%;
+}
+.hero h2{
+    font-size: 4em;
+}
+.hide {
+    display: none !important;
+}
+#search{
+    width:80%;
+    justify-content: center;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    color: #eee;
+    background: var(--fg);
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-left: 30px;
+    margin-top: 5%;
+    font-size: 1rem;
+}
+#search:hover{
+    outline: 1px solid var(--red);
+}
+#search::placeholder{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.font-cards{
+    width: 85%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    max-width: 85%;
+    gap: 5px;
+}
+.card{
+    margin-top: 10px;
+    width: 250px;
+    height: 100px;
+    background-color: var(--fg);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    font-weight: 700;
+    font-family: 'Roboto';
+    padding: 10px;
+    cursor: pointer;
+}
+.card.light{
+    background-color: #eee;
+}
+.card a svg{
+    color: #fff;
+}
+.card a svg.light{
+    color:#151517;
+}
+.card a svg:hover{
+    color: var(--red);
+}
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.modal a svg{
+    color: #fff;
+    margin-top: 25px;
+}
+.modal a svg:hover{
+    color: var(--red);
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-content {
+    background: var(--fg);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #eee;
+    width: 600px;
+    height: 300px;
+    font-family: "Roboto";
+    outline: 1px solid var(--red);
+}
+.modal-content h2{
+    font-size: 3em;;
+}
+.modal-content p{
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #fff;
+}
+.light{
+    color: var(--fg);
+    background-color: white;
+}
